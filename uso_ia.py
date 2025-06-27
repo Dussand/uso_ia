@@ -8,7 +8,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 st.title('Analisis del uso de la inteligencia artificial en la comunidad Datanilo')
 st.divider()
 #leemos el dataframe con los resultaados de la encuesta
-uso_ia = pd.read_excel(r'C:\Users\Dussand\Desktop\Finance Career\Uso_IA\Respuestas_Encuesta_IA.xlsx')
+uso_ia = pd.read_excel('Respuestas_Encuesta_IA.xlsx')
 
 #eliminamos la marca temporal y la puntacion que no servirá para el analisis
 uso_ia = uso_ia.drop(columns=['Marca temporal', 'Puntuación'], axis = 1)
